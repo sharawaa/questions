@@ -1,13 +1,12 @@
 
 
 
-export default function ({ask}){
+export default function Question({ask}){
 
     return(
-        <div className="flex w-8/12 h-200 bg-purple-300 p-10 rounded-xl flex-col drop-shadow-md">
+        <div className="flex h-200 bg-white p-5 rounded-xl flex-col drop-shadow-md">
           <div>{ask.question}</div>
-          <textarea  type="text" className="p-2 mt-2 rounded-lg" />
-
+          <textarea  type="text" className="p-2 mt-2 rounded-lg drop-shadow-l" style={{borderBottom:"2px dashed gray"}}/>
         </div>
     )
 }

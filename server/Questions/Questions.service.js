@@ -2,7 +2,7 @@ import Form from "./Questions.schema.js";
 
 export async function getQuestions() {
   try {
-    let questions = await Form.find().exec();
+    let questions = await Form.find()
     console.log(questions);
     return questions;
   } catch (error) {

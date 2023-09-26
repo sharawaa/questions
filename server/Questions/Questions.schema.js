@@ -6,10 +6,10 @@ const formSchema = new mongoose.Schema(
     question: String,
   },
   {
-    collection: "form",
+    collection: "questions",
   }
 );
 
-const Form = mongoose.model("Form", formSchema, "form");
+const Form = mongoose.model("Form", formSchema, "questions");
 
 export default Form;
